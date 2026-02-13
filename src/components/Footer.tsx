@@ -1,6 +1,5 @@
 import Link from "next/link";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import TwitterIcon from "@mui/icons-material/Twitter";
 import { siteContent } from "@/content/siteContent";
 import { cn } from "@/lib/cn";
 
