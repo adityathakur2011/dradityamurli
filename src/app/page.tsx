@@ -19,7 +19,7 @@ import { SectionTitle } from "@/components/SectionTitle";
 import { IconBadge } from "@/components/IconBadge";
 
 const HERO_IMAGE = "/img/murli.jpeg";
-const ATHLETE_IMAGE = "/img/run.jpeg";
+const ATHLETE_IMAGE = "/img/run1.jpeg";
 
 const FEATURE_ICONS = [
   { value: "25+ Years", Icon: CheckCircleOutlineIcon },
@@ -83,7 +83,6 @@ export default function HomePage() {
               className="object-cover"
               sizes="(max-width: 1024px) 100vw, 420px"
               priority
-              unoptimized
             />
             <div className="absolute inset-0 flex items-end justify-center bg-gradient-to-t from-black/85 to-transparent p-4">
               <div className="text-center text-white">
@@ -188,7 +187,6 @@ export default function HomePage() {
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 420px"
-                unoptimized
               />
             </div>
             <div className="flex-1 space-y-3 sm:space-y-6 lg:order-1">
