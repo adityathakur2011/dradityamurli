@@ -1,0 +1,113 @@
+@import "tailwindcss";
+
+/* ---------------------------------------------------------------------------
+   Global styles & base typography
+   --------------------------------------------------------------------------- */
+
+@theme inline {
+  --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+}
+
+/* Design system: teal/blue accent, soft shadows, rounded 16–20px */
+:root {
+  --color-fg: #0f172a;
+  --color-bg: #ffffff;
+  --color-muted: #64748b;
+  --color-accent: #0d9488;
+  --color-accent-hover: #0f766e;
+  --color-border: #e2e8f0;
+  --color-card-bg: #ffffff;
+  --shadow-soft: 0 4px 6px -1px rgb(0 0 0 / 0.06), 0 2px 4px -2px rgb(0 0 0 / 0.04);
+  --shadow-card: 0 4px 12px -2px rgb(0 0 0 / 0.08), 0 2px 6px -2px rgb(0 0 0 / 0.04);
+  --radius: 1rem;
+  --radius-lg: 1.25rem;
+  --header-height: 0rem;
+  --color-footer-bg: #0f766e;
+  --color-footer-border: rgba(255, 255, 255, 0.1);
+  --section-padding-y: 2.5rem;
+  --section-padding-y-sm: 3.5rem;
+  --section-padding-y-lg: 4rem;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --header-height: 4rem;
+  }
+}
+
+.dark {
+  --color-fg: #f1f5f9;
+  --color-bg: #0f172a;
+  --color-muted: #94a3b8;
+  --color-accent: #2dd4bf;
+  --color-accent-hover: #5eead4;
+  --color-border: #334155;
+  --color-card-bg: #1e293b;
+  --shadow-soft: 0 4px 6px -1px rgb(0 0 0 / 0.2), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-card: 0 4px 12px -2px rgb(0 0 0 / 0.25), 0 2px 6px -2px rgb(0 0 0 / 0.15);
+  --color-footer-bg: #134e4a;
+  --color-footer-border: rgba(255, 255, 255, 0.12);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: var(--color-fg);
+  background-color: var(--color-bg);
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+
+/* Base typography defaults */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  line-height: 1.25;
+  margin-top: 0;
+}
+
+h1 { font-size: 2.25rem; }
+h2 { font-size: 1.875rem; }
+h3 { font-size: 1.5rem; }
+h4 { font-size: 1.25rem; }
+h5 { font-size: 1.125rem; }
+h6 { font-size: 1rem; }
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img, svg, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
