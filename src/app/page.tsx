@@ -18,8 +18,8 @@ import { Button } from "@/components/Button";
 import { SectionTitle } from "@/components/SectionTitle";
 import { IconBadge } from "@/components/IconBadge";
 
-const HERO_IMAGE = "/dradityamurli/img/murli.jpeg";
-const ATHLETE_IMAGE = "/dradityamurli/img/run1.jpeg";
+const HERO_IMAGE = "/img/murli.jpeg";
+const ATHLETE_IMAGE = "/img/run1.jpeg";
 
 const FEATURE_ICONS = [
   { value: "25+ Years", Icon: CheckCircleOutlineIcon },
