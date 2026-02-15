@@ -26,6 +26,8 @@ jobs:
       
       - name: Build Project
         run: npm run build
+        env:
+          NEXT_PUBLIC_SITE_URL: https://dradityamurali.com
       
       - name: Upload Artifact
         uses: actions/upload-pages-artifact@v3

@@ -68,6 +68,19 @@ The file exports typed interfaces (e.g. `FaqItem`, `ServiceItem`) so TypeScript 
 
 Optional: add **Root Directory** if the app lives in a subfolder of the repo.
 
+### GitHub Pages (custom domain)
+
+This project is set up for **GitHub Pages with custom domain** (dradityamurali.com):
+
+1. **Repo Settings** → **Pages** → **Source**: GitHub Actions.
+2. **Custom domain**: Add `dradityamurali.com` in the Custom domain field and save.
+3. **DNS** (at your domain registrar): Add records:
+   - **A**: `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
+   - **CNAME** (optional): `www` → `yourusername.github.io`
+4. Push to `main`; the workflow builds and deploys the `out` folder. The `public/CNAME` file is included so GitHub Pages serves at your custom domain.
+
+See [GitHub Pages custom domains](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site).
+
 ### Netlify
 
 1. Push the repo to your Git provider.
